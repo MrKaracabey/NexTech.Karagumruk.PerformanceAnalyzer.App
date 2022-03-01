@@ -1,0 +1,171 @@
+﻿
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h2 class="display-4"> Performans Test Protokolü Oyuncu Bilgilerini Giriniz</h2>
+</div>
+
+<form method="post" enctype="multipart/form-data" asp-controller="Home" asp-action="Index">
+    
+    <div class="container-fluid">
+        <div class="form-group">
+            <label for="name">İsim</label>
+            <input type="text" class="form-control" id="name" placeholder="">
+        </div>
+        <div style="height: 12px"></div>
+        
+        <div class="form-group">
+            <label for="surname">Soyisim</label>
+            <input type="text" class="form-control" id="surname" placeholder="">
+        </div>
+        <div style="height: 12px"></div>
+        
+        <div class="form-group">
+            <label for="position">Mevki</label>
+            <input type="text" class="form-control" id="position" placeholder="">
+        </div>
+        <div style="height: 12px"></div>
+        
+        <div class="form-group">
+            <label for="height">Boy</label>
+            <input type="text" class="form-control" id="height" placeholder="">
+        </div>
+         <div style="height: 12px"></div>
+        
+        <div class="form-group">
+            <label for="weight">Kilo</label>
+            <input type="text" class="form-control" id="weight" placeholder="">
+        </div>
+         <div style="height: 12px"></div>
+        
+        <div class="form-group">
+            <label for="birthdate">Doğum Tarihi</label>
+            <input type="date" class="form-control" id="birthdate" placeholder="">
+        </div>
+         <div style="height: 12px"></div>
+        
+        
+
+    </div>
+    
+    <div class="text-center">
+        <h2 class="display-4">Performans Sonuçlarını giriniz</h2>
+    </div>
+    
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Test</th>
+          <th scope="col">Sonuç</th>
+          <th scope="col">Yorum</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <th scope="row">1</th>
+              <td>DEEP SQUAD</td>
+              <td>
+                  <div class="form-group">
+                      <label for="resultTextArea1"></label>
+                      <textarea class="form-control" id="resultTextArea1" rows="3"></textarea>
+                  </div>
+              </td>
+              <td>
+                  <div class="form-group">
+                      <label for="commentTextArea1"></label>
+                      <textarea class="form-control" id="commentTextArea1" rows="3"></textarea>
+                  </div>
+              </td>
+          </tr>
+          <tr>
+              <th scope="row">2</th>
+              <td>HORIZONTAL JUMP</td>
+              <td>
+                  <div class="form-group">
+                      <label for="resultTextArea2"></label>
+                      <textarea class="form-control" id="resultTextArea2" rows="3"></textarea>
+                  </div>
+              </td>
+              <td>
+                  <div class="form-group">
+                      <label for="commentTextArea2"></label>
+                      <textarea class="form-control" id="commentTextArea2" rows="3"></textarea>
+                  </div>
+              </td>
+          </tr>
+          <tr>
+              <th scope="row">3</th>
+              <td>30M SPRİNT </td>
+              <td>
+                  <div class="form-group">
+                      <label for="resultTextArea3"></label>
+                      <textarea class="form-control" id="resultTextArea3" rows="3"></textarea>
+                  </div>
+              </td>
+              <td>
+                  <div class="form-group">
+                      <label for="commentTextArea3"></label>
+                      <textarea class="form-control" id="commentTextArea3" rows="3"></textarea>
+                  </div>
+              </td>
+          </tr>
+          <tr>
+              <th scope="row">4</th>
+              <td>FLAMİNGO DENGE </td>
+              <td>
+                  <div class="form-group">
+                      <label for="resultTextArea4"></label>
+                      <textarea class="form-control" id="resultTextArea4" rows="3"></textarea>
+                  </div>
+              </td>
+              <td>
+                  <div class="form-group">
+                      <label for="commentTextArea4"></label>
+                      <textarea class="form-control" id="commentTextArea4" rows="3"></textarea>
+                  </div>
+              </td>
+          </tr>
+          <tr>
+              <th scope="row">5</th>
+              <td>PRO AGİLİTY </td>
+              <td>
+                  <div class="form-group">
+                      <label for="resultTextArea5"></label>
+                      <textarea class="form-control" id="resultTextArea5" rows="3"></textarea>
+                  </div>
+              </td>
+              <td>
+                  <div class="form-group">
+                      <label for="commentTextArea5"></label>
+                      <textarea class="form-control" id="commentTextArea5" rows="3"></textarea>
+                  </div>
+              </td>
+          </tr>
+          <tr>
+                                                <th scope="row">6</th>
+                                                <td>FUTBOL KOORDİNASYON </td>
+                                                  <td>
+                                                      <div class="form-group">
+                                                          <label for="resultTextArea6"></label>
+                                                          <textarea class="form-control" id="resultTextArea6" rows="3"></textarea>
+                                                        </div>
+                                                  </td>
+                                                  <td>
+                                                      <div class="form-group">
+                                                          <label for="commentTextArea6"></label>
+                                                          <textarea class="form-control" id="commentTextArea6" rows="3"></textarea>
+                                                      </div>
+                                                  </td>
+                                              </tr>
+      
+      </tbody>
+    </table>
+      
+</form>
+
+
+
+
