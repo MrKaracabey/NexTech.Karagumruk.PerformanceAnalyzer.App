@@ -22,8 +22,82 @@ public class HomeController : Controller
     }
     
     [HttpPost]
-    public IActionResult Index()
+    public IActionResult Index(
+        string tc, string name, string surname, string position,
+        string height, string weight, string birthdate,
+        string resultTextArea1, string  commentTextArea1,
+        string resultTextArea2, string  commentTextArea2,
+        string resultTextArea3, string  commentTextArea3,
+        string resultTextArea4, string  commentTextArea4,
+        string resultTextArea5, string  commentTextArea5,
+        string resultTextArea6, string  commentTextArea6
+    )
     {
+        var player = new Player
+        {
+            Id = Convert.ToString(Guid.NewGuid()),
+            IdentityNumber = tc,
+            Name = name,
+            Surname =surname,
+            Position = position,
+            Height = Convert.ToInt32(height),
+            Weight =Convert.ToInt32(weight),
+            BirthDay = Convert.ToDateTime(birthdate)
+        };
+
+        var deepSquad = new Test()
+        {
+            Id = "1",
+            Name = "DeepSquad",
+            Result = resultTextArea1,
+            Comment = commentTextArea1
+
+        };
+
+        var horizontalJumo = new Test()
+        {
+            Id = "2",
+            Name = "HorizontalJump",
+            Result = resultTextArea2,
+            Comment = commentTextArea2
+
+        };
+
+        var sprint = new Test()
+        {
+            Id = "3",
+            Name = "Sprint",
+            Result = resultTextArea3,
+            Comment = commentTextArea3
+        };
+
+        var flamingoDenge = new Test()
+        {
+            Id = "4",
+            Name = "FlamingoDenge",
+            Result = resultTextArea4,
+            Comment = commentTextArea4
+        };
+
+        var proAglitiy = new Test()
+        {
+            Id = "5",
+            Name = "ProAgility",
+            Result = resultTextArea5,
+            Comment = commentTextArea5
+        };
+
+        var futbolKordinasyon = new Test()
+        {
+            Id = "6",
+            Name = "FutbolKordinasyon",
+            Result = resultTextArea6,
+            Comment = commentTextArea6
+        };
+
+
+
+        Console.WriteLine(player);
         return View();
     }
 
